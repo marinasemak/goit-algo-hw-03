@@ -1,5 +1,6 @@
 import random
 
+
 # Generates unique set of numbers for the lottery
 def get_numbers_ticket(min, max, quantity):
 
@@ -11,12 +12,10 @@ def get_numbers_ticket(min, max, quantity):
         random_list = random.sample(num_range, quantity)
         # Sort list in ascending order
         random_list.sort()
-    else: 
+    else:
         random_list = []
     return random_list
 
 
 lottery_numbers = get_numbers_ticket(1, 49, 6)
 print("Your lottery numbers:", lottery_numbers)
-
-
